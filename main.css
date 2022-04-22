@@ -1,69 +1,74 @@
-* {
-    box-sizing: border-box;
-}
-html {
-    background-color: rgb(225, 230, 70);
-}
-section {
-    border: 1px white solid;
-    width: 33.33%;
+*{font-family:"Comic Sans MS", cursive, sans-serif;
+  box-sizing: border-box;}
+
+	.title-container {
+  width: 90%;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 175%;
+  }
+
+   .menu-title{
+   	width:40%;
+   	float:right;
+   	border: 2px solid black;
+   	text-align: center;
+   	font-size: 125%;
+   	float:right;
+   }
+
+   .menu{
+   	background-color: #8e8e8e;
+   	margin:10px;
+   	border:2px solid black;
+   }
+
+   .text{
+   	margin:10px;
+   	margin-top:40px;
+   	clear:both;
+   }
+
+   .row {
+    width: 90%;
+    border: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:5px;
+   }
+   #chicken{background-color: #cf8d8d;}
+   #beef{background-color: #b93c3b; color:white;}
+   #sushi{background-color: #e1ca8d;}
+   
+
+/***** Desktop *****/
+@media (min-width: 992px) {
+  .col-lg-4 {
     float: left;
-    position: relative;
-    /* margin: 1%; */
-
-    padding: 10px;
-    padding-top: 60px;
-    color: white;
-    background-color: black;
-}
-p {
-    text-align: center;
-}
-h1 {
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-section > span {
-    background-color: grey;
-}
-span p.title {
-    font-weight: bold;
+    background-color: white;
+    width: 33.33%;
+  }
 }
 
-span {
-border: 1px solid black;
-position: absolute;
-width: 35%;
-height: 30%;
-top: 0;
-bottom: 0;
-right: 0;
-}
-/* Media Queires */
-/* Desktop */
-/* 992px */
-
-/* Tablet */
-/* 768px and 991px */
+/***** Tablet *****/
 @media (min-width: 768px) and (max-width: 991px) {
-    section.first {
-      width: 50%;
-    }
-  
-    section.second {
-      width: 50%;
-    }
-    section.third {
-      width: 100%;
-      /* margin-top: 20px; */
-    }
+  .col-md-6, .col-md-12 {
+    float: left;
+    background-color: white;
   }
-  
-  /* mobile */
-  /* max-width 767px */
-  @media (max-width: 767px) {
-    section {
-      width: 100%;
-    }
+  .col-md-6 {
+    width: 50%;
   }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/***** Mobile *****/
+@media (max-width: 767px) {.col-sm-12 {
+    float: left;
+    background-color: white;
+    width: 100%;}
+}
